@@ -5,7 +5,7 @@ const FoodDetails = ({ food }) => {
 
     const handleClick = async () => {
 
-      const response = await fetch('/mess/food/' + food._id, {
+      const response = await fetch('https://mess-managemet.onrender.com/mess/food/' + food._id, {
         method: 'DELETE'
       })
       const json = await response.json()

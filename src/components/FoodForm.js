@@ -16,7 +16,7 @@ const FoodForm = () => {
 
     const food = {name, stars, description, price}
     
-    const response = await fetch('/mess/food', {
+    const response = await fetch('https://mess-managemet.onrender.com/mess/food', {
       method: 'POST',
       body: JSON.stringify(food),
       headers: {
